@@ -1,0 +1,31 @@
+public class LibraryMember {
+    private String name;
+    private int memberId;
+
+    public LibraryMember(String name, int memberId) {
+        this.name = name;
+        this.memberId = memberId;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getMemberId() {
+        return memberId;
+    }
+
+    public void setMemberId(int memberId) {
+        this.memberId = memberId;
+    }
+
+    @Override
+    public String toString() {
+        return "Member: " + name +
+                ", ID: " + memberId;
+    }
+}
